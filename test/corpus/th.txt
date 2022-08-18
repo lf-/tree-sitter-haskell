@@ -37,6 +37,18 @@ $(a ''A.Aa)
      (exp_th_quoted_name (type_name (qualified_type (module) (type)))))))))
 
 ================================================================================
+template haskell: top level splice without parens
+================================================================================
+
+someTemplateHaskell $(spliceOne) $(spliceTwo "someString")
+
+instance SomeClass Something where
+  type Assoc Something = ()
+
+---
+
+
+================================================================================
 template haskell: inline splice variable
 ================================================================================
 
@@ -148,3 +160,4 @@ a = [a|
 ---
 
 (haskell (function (variable) (quasiquote (quasiquote_start) (quoter) (quasiquote_bar) (MISSING "|]"))))
+
