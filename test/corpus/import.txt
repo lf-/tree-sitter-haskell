@@ -249,3 +249,13 @@ import A (type (++)(..))
 ---
 
 (haskell (import (module) (import_list (import_item (namespace) (type_operator) (import_con_names (all_names))))))
+
+================================================================================
+import: times operator
+================================================================================
+
+import Prelude ((*))
+
+---
+
+()

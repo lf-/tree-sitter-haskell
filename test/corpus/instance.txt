@@ -254,3 +254,27 @@ deriving via (A a) instance A a
  (deriving_declaration
   (via (type_parens (type_apply (type_name (type)) (type_name (type_variable)))))
   (instance_head (class_name (type)) (type_name (type_variable)))))
+
+
+================================================================================
+instance: deriving anyclass
+================================================================================
+
+deriving anyclass instance (Read A)
+
+instance B C where
+
+---
+
+()
+
+================================================================================
+instance: parenthesized type
+================================================================================
+
+instance (A (B C)) where
+  aa = a (b . c . d)
+
+---
+
+()

@@ -274,3 +274,16 @@ class TwoAssocs a where
       (type_instance (type_name (type)) (type_name (type_variable)) (type_literal (con_unit)))
       (signature (variable) (type_name (type_variable))))))
 
+
+================================================================================
+class: empty associated data constructor
+================================================================================
+
+instance A B
+  data Assoc B = SomeNullary
+    {}
+
+---
+
+()
+
