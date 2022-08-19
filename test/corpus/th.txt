@@ -40,7 +40,7 @@ $(a ''A.Aa)
 template haskell: top level splice without parens, but weird
 ================================================================================
 
-someTemplateHaskell $(spliceOne) $(spliceTwo "someString")
+someTemplateHaskell $(spliceOne)
 
 instance SomeClass Something where
   type Assoc Something = ()
