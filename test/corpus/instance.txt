@@ -266,7 +266,13 @@ instance B C where
 
 ---
 
-()
+(haskell
+  (deriving_declaration (deriving_strategy)
+    (instance_head (class_name (type))
+      (type_name (type))))
+  (instance
+    (instance_head (class_name (type)) (type_name (type)))
+    (where)))
 
 ================================================================================
 instance: parenthesized type
